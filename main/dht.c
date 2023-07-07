@@ -28,8 +28,6 @@ void dht_test(void *pvParameters)
         else
             printf("Could not read data from sensor\n");
 
-        // If you read the sensor data too often, it will heat up
-        // http://www.kandrsmith.org/RJS/Misc/Hygrometers/dht_sht_how_fast.html
         vTaskDelay(pdMS_TO_TICKS(2000));
     }
 }
